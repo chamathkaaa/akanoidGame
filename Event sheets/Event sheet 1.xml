@@ -2,5 +2,57 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="489991253042176">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="110679553794655" type="arkanoidpng2">
+                    <param id="0" name="Object">red</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="339953372574323">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="677042978702564" type="red">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="291188222394869" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="5" name="Set frame" sid="771483001760829" type="red">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="949044607262952">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="521189679436344" type="red">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="527386837746479" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="5" name="Set frame" sid="739738383318108" type="red">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="550922881899030">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="856036456010353" type="red">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="675272255361633" type="red" />
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

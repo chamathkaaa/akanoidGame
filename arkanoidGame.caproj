@@ -12,7 +12,12 @@
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -59,6 +64,11 @@
         </object-type>
         <object-type name="red" sid="327310577027806">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="587681360155532">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="437508331838612" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="U:\Tutorials\Construct 2\freebundle\Sprites\Platformer pack\9-Patch pack\Rounded\red.png">
@@ -95,6 +105,58 @@
                             <point x="0.5" y="1" />
                             <point x="0.03125" y="0.96875" />
                             <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="akanoidBar" sid="213052140004613">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="681586707368735">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="444485593464342">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="152692067131253">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="124035046377119" speed="5">
+                    <frame duration="1" hotspotX="0.644444" hotspotY="0.4" original-source="U:\Tutorials\CImages\PNG\akanoidBar.png">
+                        <collision-poly>
+                            <point x="0.0444444" y="0.0333333" />
+                            <point x="0.644444" y="0" />
+                            <point x="0.966667" y="0.333333" />
+                            <point x="0.644444" y="0.766667" />
+                            <point x="0.0444444" y="0.733333" />
+                            <point x="0" y="0.366667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arkanoidpng2" sid="831446343752814">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="347274514258072">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167130379083025" speed="5">
+                    <frame duration="1" hotspotX="0.501577" hotspotY="0.5" original-source="U:\Tutorials\CImages\PNG\arkanoid-png-8.png">
+                        <collision-poly>
+                            <point x="0.15142" y="0.145455" />
+                            <point x="0.498423" y="0.0030303" />
+                            <point x="0.84858" y="0.145455" />
+                            <point x="0.996845" y="0.5" />
+                            <point x="0.84858" y="0.854545" />
+                            <point x="0.498423" y="0.99697" />
+                            <point x="0.15142" y="0.854545" />
+                            <point x="0.00315457" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
