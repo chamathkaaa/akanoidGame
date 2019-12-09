@@ -4,26 +4,17 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="0" name="Score" sid="720675060004765" static="0" type="number">0</variable>
-        <event-block sid="653519278177328">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="761118654987378" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="834129942862807" type="Text">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
-                </action>
-                <action id="-15" name="Set visible" sid="702437334232979" type="Text2">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="489991253042176">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="110679553794655" type="arkanoidpng2">
                     <param id="0" name="Object">red</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Set text" sid="227257446091975" type="Text">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="340483607298155">
                     <conditions>
