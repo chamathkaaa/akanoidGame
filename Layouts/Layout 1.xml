@@ -1677,7 +1677,7 @@
                 <instance type="Text2" uid="8">
                     <properties>
                         <text>Game Over. Press Space bar to continue.</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
